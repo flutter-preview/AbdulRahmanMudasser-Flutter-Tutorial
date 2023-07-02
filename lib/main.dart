@@ -11,17 +11,26 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.lightBlue[400],
         body: Column(
-          children: const [
-            Text("Hello, Welcome"),
-            Text("Login To Continue"),
-            TextField(
+          children: [
+            const Text("Hello, Welcome"),
+            const Text("Login To Continue"),
+            const TextField(
               decoration: InputDecoration(hintText: "UserName"),
             ),
-            TextField(
+            const TextField(
               decoration: InputDecoration(hintText: "Password"),
             ),
+            TextButton(
+              child: const Text(
+                "Log In",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+              onPressed: () {},
+            )
           ],
         ),
       ),
