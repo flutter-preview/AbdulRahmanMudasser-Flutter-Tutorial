@@ -59,13 +59,11 @@ class LoginPage extends StatelessWidget {
             ),
           ),
           TextButton(
-            child: const Text(
-              "Log In",
-              style: TextStyle(
-                color: Colors.white,
-              ),
+            style: TextButton.styleFrom(
+              foregroundColor: Colors.white,
             ),
             onPressed: () {},
+            child: Text("Log In"),
           ),
           const Text("Or Sign In With"),
           Row(
