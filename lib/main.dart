@@ -30,6 +30,11 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
+            ),
+            const Text("Or Sign In With"),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text("Sign In With Google"),
             )
           ],
         ),
