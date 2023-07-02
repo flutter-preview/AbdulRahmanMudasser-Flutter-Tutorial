@@ -32,10 +32,30 @@ class MyApp extends StatelessWidget {
               onPressed: () {},
             ),
             const Text("Or Sign In With"),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text("Sign In With Google"),
+            Row(
+              children: [
+                Image.asset(
+                  "assets/images/google.png",
+                  height: 30,
+                  width: 30,
+                ),
+                const Text("Login With Google"),
+              ],
             ),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              children: [
+                Image.asset(
+                  "assets/images/facebook.png",
+                  height: 30,
+                  width: 30,
+                ),
+                const Text("Login With Facebook"),
+              ],
+            ),
+
           ],
         ),
       ),
