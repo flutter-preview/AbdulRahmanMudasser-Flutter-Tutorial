@@ -4,7 +4,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue[500],
+      backgroundColor: Colors.blue[900],
       body: Column(
         children: [
           const SizedBox(
@@ -44,7 +44,7 @@ class LoginPage extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 10,
+            height: 16,
           ),
           TextField(
             decoration: InputDecoration(
@@ -68,39 +68,89 @@ class LoginPage extends StatelessWidget {
                 foregroundColor: Colors.white,
               ),
               onPressed: () {},
-              child: Text("Forgot Password?"),
+              child: const Text("Forgot Password?"),
             ),
-          ),
-          TextButton(
-            style: TextButton.styleFrom(
-              foregroundColor: Colors.white,
-            ),
-            onPressed: () {},
-            child: const Text("Log In"),
-          ),
-          const Text("Or Sign In With"),
-          Row(
-            children: [
-              Image.asset(
-                "assets/images/google.png",
-                height: 30,
-                width: 30,
-              ),
-              const Text("Login With Google"),
-            ],
           ),
           const SizedBox(
             height: 20,
           ),
-          Row(
-            children: [
-              Image.asset(
-                "assets/images/facebook.png",
-                height: 30,
-                width: 30,
+          SizedBox(
+            width: 250,
+            child: TextButton(
+              style: TextButton.styleFrom(
+                  foregroundColor: Colors.black,
+                  backgroundColor: Colors.amberAccent),
+              onPressed: () {},
+              child: const Text("Log In"),
+            ),
+          ),
+          const SizedBox(
+            height: 70,
+          ),
+          const Text(
+            "Or Sign In With",
+            style: TextStyle(color: Colors.white),
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              foregroundColor: Colors.black,
+              backgroundColor: Colors.white,
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(52),
+                ),
               ),
-              const Text("Login With Facebook"),
-            ],
+            ),
+            onPressed: () {
+              print("Sign In With Google is clicked");
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  "assets/images/google.png",
+                  height: 30,
+                  width: 30,
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                const Text("Sign In With Google"),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.black,
+                backgroundColor: Colors.white,
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(50),
+                  ),
+                )),
+            onPressed: () {
+              print("Sign In With Facebook is clicked");
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  "assets/images/facebook.png",
+                  height: 30,
+                  width: 30,
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                const Text("Sign In With Facebook"),
+              ],
+            ),
           ),
           Row(
             children: [
