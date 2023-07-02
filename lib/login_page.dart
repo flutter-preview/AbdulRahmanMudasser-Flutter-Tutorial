@@ -34,18 +34,26 @@ class LoginPage extends StatelessWidget {
           TextField(
             decoration: InputDecoration(
               hintText: "UserName",
-              border: InputBorder.none,
+              border: const OutlineInputBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(12),
+                ),
+              ),
               filled: true,
               fillColor: Colors.white.withOpacity(0.5),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           TextField(
             decoration: InputDecoration(
               hintText: "Password",
-              border: InputBorder.none,
+              border: const OutlineInputBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(12),
+                ),
+              ),
               filled: true,
               fillColor: Colors.white.withOpacity(0.5),
             ),
