@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
             height: 20,
           ),
           const Text(
-            "Hello, Welcome",
+            "Hello, Welcome Back!",
             style: TextStyle(
               color: Colors.white,
               fontSize: 22,
@@ -58,12 +58,25 @@ class LoginPage extends StatelessWidget {
               fillColor: Colors.white.withOpacity(0.5),
             ),
           ),
+          const SizedBox(
+            height: 16,
+          ),
+          Align(
+            alignment: Alignment.centerRight,
+            child: TextButton(
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+              ),
+              onPressed: () {},
+              child: Text("Forgot Password?"),
+            ),
+          ),
           TextButton(
             style: TextButton.styleFrom(
               foregroundColor: Colors.white,
             ),
             onPressed: () {},
-            child: Text("Log In"),
+            child: const Text("Log In"),
           ),
           const Text("Or Sign In With"),
           Row(
