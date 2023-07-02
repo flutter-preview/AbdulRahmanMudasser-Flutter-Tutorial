@@ -55,7 +55,15 @@ class MyApp extends StatelessWidget {
                 const Text("Login With Facebook"),
               ],
             ),
-
+            Row(
+              children: [
+                const Text("Don't Have An Account"),
+                TextButton(
+                  onPressed: () {},
+                  child: Text("Sign Up"),
+                ),
+              ],
+            ),
           ],
         ),
       ),
