@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Material(
         child: Column(
-          children: [
-            const Text("Hello World"),
-            const Text("Hello There"),
-            const Text("I Am Writing This In Column"),
-            const Text("I Am Writing This In Stateless Widget")
+          children: const [
+            Text("Hello World"),
+            Text("Hello There"),
+            Text("I Am Writing This In Column"),
+            Text("I Am Writing This In Stateless Widget")
           ],
         ),
       ),
