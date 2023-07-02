@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.lightBlue[400],
+        backgroundColor: Colors.lightBlue[500],
         body: Column(
           children: [
             const Text("Hello, Welcome"),
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
             ElevatedButton(
               onPressed: () {},
               child: const Text("Sign In With Google"),
-            )
+            ),
           ],
         ),
       ),
